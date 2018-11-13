@@ -1,6 +1,13 @@
 // change title
 document.title = "Fruits & Vegetables Corp";
 
+// add CSS styling
+let head = document.querySelector("head");
+let link = document.createElement("link");
+link.setAttribute("rel", "stylesheet");
+link.setAttribute("href", "main.css");
+head.appendChild(link);
+
 //change text header h1
 let h1 = document.querySelector("h1");
 h1.innerHTML = "Fruits &amp; Vegetables Corp";
